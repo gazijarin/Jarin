@@ -1,0 +1,101 @@
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+.clear:after {
+    clear: both;
+}
+.clear {
+    *zoom: 1;
+}
+
+@mixin container($width: 100%){
+	@extend .clear;
+	width: $width;
+}
+
+@mixin clear{
+	@extend .clear;
+}
+
+@mixin span($a, $b: $grid-columns){
+	float: left;
+	@if unit($a) == "%" {
+		width: $a;
+	}@elseif unitless($a) && $a<=$grid-columns{
+		width: percentage($a/$grid-columns);
+	}@elseif unitless($a) && $a>$grid-columns {
+		width: pergentage($a);
+	}
+}
+
+@mixin centered-span($a, $b: $grid-columns){
+	margin: auto;
+	@if unit($a) == "%" {
+		width: $a;
+	}@elseif unitless($a) && $a<=$grid-columns{
+		width: percentage($a/$grid-columns);
+	}@elseif unitless($a) && $a>$grid-columns {
+		width: pergentage($a);
+	}
+}
+
+@mixin push($a, $b: $grid-columns){
+	position: relative;
+	@if unit($a) == "%" {
+		left: $a;
+	}@elseif unitless($a) && $a<=$grid-columns{
+		left: percentage($a/$grid-columns);
+	}@elseif unitless($a) && $a>$grid-columns {
+		left: pergentage($a);
+	}
+}
+
+@mixin pull($a, $b: $grid-columns){
+	position: relative;
+	@if unit($a) == "%" {
+		right: $a;
+	}@elseif unitless($a) && $a<=$grid-columns{
+		right: percentage($a/$grid-columns);
+	}@elseif unitless($a) && $a>$grid-columns {
+		right: pergentage($a);
+	}
+}
+
+@mixin prefix($a, $b: $grid-columns){
+	@if unit($a) == "%" {
+		margin-left: $a;
+	}@elseif unitless($a) && $a<=$grid-columns{
+		margin-left: percentage($a/$grid-columns);
+	}@elseif unitless($a) && $a>$grid-columns {
+		margin-left: pergentage($a);
+	}
+}
+
+@mixin suffix($a, $b: $grid-columns){
+	@if unit($a) == "%" {
+		margin-right: $a;
+	}@elseif unitless($a) && $a<=$grid-columns{
+		margin-right: percentage($a/$grid-columns);
+	}@elseif unitless($a) && $a>$grid-columns {
+		margin-right: pergentage($a);
+	}
+}
+
+@mixin gutter($size ,$vertical: false){
+	$horizontal: $size/2;
+	@if type-of($vertical) == "number" {
+		$vertical: $vertical/2;
+	}@else{
+		$vertical: $horizontal;
+	}
+
+	@if $vertical {
+		padding: $vertical $horizontal;
+	}
+}
+
+@mixin last(){
+	float: right;
+}

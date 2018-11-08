@@ -1,0 +1,23 @@
+.which {
+	.projects {
+		text-align: center;
+	}
+	
+	.row {
+		@include container;
+	}
+
+	.project {
+		@extend %block;
+		margin-bottom: 2em;
+	}
+
+	h3 {
+		color: $tagline-color;
+		font-size: 1.5em;
+	}
+
+	p {
+		color: #fff;
+	}
+}

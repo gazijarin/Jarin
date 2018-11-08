@@ -1,0 +1,160 @@
+{
+  "name": "hedronium-social",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "d73eceadda1f594cec0536087539afbf",
+      "css": "heart",
+      "code": 59416,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "aa58e30c7196b1378a6ca78c025cc3b5",
+      "css": "behance",
+      "code": 59415,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0fbfb1cd7a847c88ea4c141d0e1bbdb5",
+      "css": "instagram",
+      "code": 59414,
+      "src": "entypo"
+    },
+    {
+      "uid": "i6ej1r6t84xouh0dct7g9zyx3ya9s9eg",
+      "css": "web",
+      "code": 59413,
+      "src": "modernpics"
+    },
+    {
+      "uid": "e566d3f1d24f22981f6552d5188e7265",
+      "css": "gplus",
+      "code": 59400,
+      "src": "zocial"
+    },
+    {
+      "uid": "d089814548af1441aa00ecec47851f38",
+      "css": "fivehundredpx",
+      "code": 59392,
+      "src": "zocial"
+    },
+    {
+      "uid": "799d6108751f684ac9d018983251a08f",
+      "css": "pinterest",
+      "code": 59401,
+      "src": "zocial"
+    },
+    {
+      "uid": "ffecc77dcd9b9dff653ff88b508220d4",
+      "css": "foursquare",
+      "code": 59402,
+      "src": "zocial"
+    },
+    {
+      "uid": "b3a537446285bb3510bba57d20374818",
+      "css": "reddit",
+      "code": 59403,
+      "src": "zocial"
+    },
+    {
+      "uid": "2dd7e3046b63beb19616dce63c5782a6",
+      "css": "blogger",
+      "code": 59404,
+      "src": "zocial"
+    },
+    {
+      "uid": "003ba8187d6b00ec3e1ba75d00f1246a",
+      "css": "dribbble",
+      "code": 59405,
+      "src": "zocial"
+    },
+    {
+      "uid": "231eeeedfdda9dd5d03dc8d03060007d",
+      "css": "flickr",
+      "code": 59406,
+      "src": "zocial"
+    },
+    {
+      "uid": "cc4e62d1721c863fdc6944d2fd87521d",
+      "css": "linkedin",
+      "code": 59407,
+      "src": "zocial"
+    },
+    {
+      "uid": "1884ff7f89cc02840606d28f9bcf930a",
+      "css": "skype",
+      "code": 59394,
+      "src": "zocial"
+    },
+    {
+      "uid": "b1ec8e90c2c85cf0035849980a3789b3",
+      "css": "twitter",
+      "code": 59395,
+      "src": "zocial"
+    },
+    {
+      "uid": "57a4f84c40a0c44d47387105f162a427",
+      "css": "youtube",
+      "code": 59398,
+      "src": "zocial"
+    },
+    {
+      "uid": "e47352cd4c5e069288b29a2c9ab9d305",
+      "css": "vimeo",
+      "code": 59399,
+      "src": "zocial"
+    },
+    {
+      "uid": "a58032f4aafd0eec54803075f5b320d4",
+      "css": "email",
+      "code": 59408,
+      "src": "zocial"
+    },
+    {
+      "uid": "916eba314d66dee45c9859d2fd146d36",
+      "css": "myspace",
+      "code": 59409,
+      "src": "zocial"
+    },
+    {
+      "uid": "6f7586c6f99798c3c1de6123d1f6cfa9",
+      "css": "facebook",
+      "code": 59397,
+      "src": "zocial"
+    },
+    {
+      "uid": "ff16079eb4be12c49bf3014d2322acdd",
+      "css": "github",
+      "code": 59396,
+      "src": "zocial"
+    },
+    {
+      "uid": "0636c283a9822288a767609062bbf4a4",
+      "css": "wordpress",
+      "code": 59410,
+      "src": "zocial"
+    },
+    {
+      "uid": "5b1387fb48babf0748ea04107c9adac3",
+      "css": "bitbucket",
+      "code": 59393,
+      "src": "zocial"
+    },
+    {
+      "uid": "e7d17d4d07756f4ab5eb690eea1275ca",
+      "css": "stackoverflow",
+      "code": 59411,
+      "src": "zocial"
+    },
+    {
+      "uid": "155970c9f52b23f31026bab7163caa63",
+      "css": "codepen",
+      "code": 59412,
+      "src": "brandico"
+    }
+  ]
+}

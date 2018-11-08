@@ -1,0 +1,50 @@
+.who {
+	.face {
+		padding: 2em;
+
+		@extend %block;
+		overflow: hidden;
+		@include container;
+
+		@include border-radius(0.3em);
+
+		margin: 2em 0;
+
+		@include at-tablet {
+			padding: 0;
+		}
+	}
+
+	.pic {
+		display: none;
+
+		@include at-tablet {
+			display: block;
+			height: 10em;
+			float: left;
+			margin-right: 1em;
+
+			text-align: center;
+		}
+	}
+
+	img {
+		display: inline-block;
+		height: 100%;
+	}
+
+	h3 {
+		font-size: 2em;
+		color: darken(#fff, 50%);
+
+		em {
+			font-style: normal;
+			color: #fff;
+		}
+	}
+
+	.social a {
+		font-size: 1.3em;
+		@include single-text-shadow(0, 0.2em, 0, 0, rgba(0,0,0,0.4));
+	}
+}

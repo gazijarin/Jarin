@@ -1,0 +1,35 @@
+.which {
+	margin-bottom: 8em;
+
+	.project {
+		@include container;
+	}
+
+	.project {
+		display: block;
+
+		@include span(100%);
+
+		@include at-tablet {
+			@include span(47%);
+			@include suffix(3%);
+		}
+
+		@include single-transition(all, 200ms);
+
+		&:hover {
+			background: darken($bg-color, 10%);
+		}
+
+		padding: 2em;
+	}
+
+	object,
+	img {
+		width: 100%;
+	}
+
+	object {
+		pointer-events: none;
+	}
+}

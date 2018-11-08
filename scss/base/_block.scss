@@ -1,0 +1,5 @@
+%block {
+	background-color: darken($bg-color, 5%);
+	@include border-radius(0.2em);
+	border: 0.1em lighten(#000, 20%) solid;
+}

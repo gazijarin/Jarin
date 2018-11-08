@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	background: $bg-color url(../images/background.png);
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	display: none;
+}
+
+h2, h3 {
+	text-transform: uppercase;
+	font-family: BebasNeueBold, sans-serif;
+
+	color: #fff;
+
+	margin: 0.4em 0;
+}
+
+h2 {
+	font-size: 2.5em;
+	text-align: center;
+
+	@include at-tablet {
+		text-align: left;
+		font-size: 3.5em;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $tagline-color;
+
+	@include single-transition(all, 100ms);
+
+	&:hover {
+		color: lighten($tagline-color, 20%);
+	}
+}
+
+blockquote {
+	margin: 0.5em;
+	padding-left: 1em;
+
+	$color: darken(#fff, 40%);
+
+	border-left: 0.2em solid $color;
+	color: $color;
+	font-style: italics;
+}

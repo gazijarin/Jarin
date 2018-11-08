@@ -1,0 +1,50 @@
+@mixin at-mobile{
+	@content;
+}
+
+@mixin at-tablet{
+	@media (min-width: $grid-tablet-point){
+		@content;
+	}
+}
+
+@mixin at-desktop{
+	@media (min-width: $grid-desktop-point){
+		@content;
+	}
+}
+
+@mixin at($a, $b:false){
+	@if $b != false {
+		@media (min-width: $a) and (max-width: $b){
+			@content;
+		}
+	}@else{
+		@media (min-width: $a) {
+			@content;
+		}
+	}
+}
+
+@mixin in-desktop{
+	@media (min-width: $grid-desktop-point){
+		@content;
+	}
+}
+
+@mixin in-mobile{
+	@media (max-width: $grid-tablet-point){
+		@content;
+	}
+}
+
+@mixin in-tablet{
+	@include at($grid-tablet-point, $grid-desktop-point){
+		@content
+	}
+}
+
+@include in-mobile{ b{ color: 0; } }
+@include at-tablet{ b{ color: 0; } }
+@include in-tablet{ b{ color: 0; } }
+@include at-desktop{ b{ color: 0; } }
