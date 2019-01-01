@@ -1,2 +1,0 @@
-# Jarin
-## A personal website.
