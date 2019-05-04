@@ -46,7 +46,7 @@ $(function(){
 			orbit_controls: false,
 			height: win.height(),
 			width: win.width()*0.5,
-			plane_color: 0x2B2B2B,
+			plane_color: 0x0f0f0f,
 		});
 
 		$(document).mousemove(function(e){
